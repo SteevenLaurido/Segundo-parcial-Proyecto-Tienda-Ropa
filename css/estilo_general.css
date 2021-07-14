@@ -69,7 +69,7 @@ a{/*selector de elemento- */
 }
 
 /*-----------------------------------footer------------------------------------*/
-.footer {/*selector por clase-MONTENEGRO ARELLANO JHON*/
+.footer {/*selector por clase*/
     float: right;
     width: 100%;
     height:80px; /*different*/
@@ -81,24 +81,24 @@ a{/*selector de elemento- */
 }
 .footer p{
     padding: 6px;
-    background-color:#141414;
+    background-color:#0a005f;
     padding-bottom: 3px;
 }
-.futer-push{/*selector por clase-MONTENEGRO ARELLANO JHON*/
+.futer-push{/*selector por clase-*/
     float: right;
     width: 100%;
     height:80px; /*different*/
     margin: 0px;
-background: red;
+background: #0d0080;
 
 }
-.redes-sociales{/*selector por clase-MONTENEGRO ARELLANO JHON*/
+.redes-sociales{/*selector por clase*/
     display: inline-flex;
 
 }
-#sigueme {/*selector descendiente -MONTENEGRO ARELLANO JHON*/
+#sigueme {/*selector descendiente */
     float: left;
-    color: #fff;
+    color: #ffffff;
     margin: 20px;
     font-weight: normal;
     line-height: 30px;
@@ -118,11 +118,11 @@ background: red;
 }
 .twitter a{
     margin: 8px 15px 10px 12px;
-color: antiquewhite;
+color: #ffffff;
 
 }
 .twitter:hover{
-    background-color:#a5a7aa;
+    background-color:#5449b8;
   
 }
 .im-tuit{
