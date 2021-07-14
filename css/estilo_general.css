@@ -132,3 +132,16 @@ color: #ffffff;
     margin-left: 12px;
 
 }
+
+
+
+ul,ol{
+    list-style: none;
+}
+
+.nav_li li a{
+    background-color: brown;
+    color: chartreuse;
+    text-decoration: none;
+    padding: 10 px 15px;
+}
