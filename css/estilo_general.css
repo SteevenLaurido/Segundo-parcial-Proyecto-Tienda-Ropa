@@ -166,3 +166,80 @@ color: #ffffff;
 }
 /*-----------------------------------Fin del footer------------------------------------*/
 
+
+/*.....................Josue Romero.....................*/
+/*
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+    
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left:0;}
+    20% {margin-left:0;}
+
+    25% {margin-left:-100;}
+    45% {margin-left:-100;}
+
+    50% {margin-left:-200;}
+    70% {margin-left:-200;}
+
+    75% {margin-left:-300;}
+    100% {margin-left:-300;}
+
+}
+*/
+
+.slider{
+    width: 400%;
+    height: 720px;
+background: url(../img/Seccion_Masculino/port2.jpg);
+    margin: auto;
+    
+    animation: slide 20s infinite;
+    display: flex;
+    padding: 0;
+   
+}
+
+@keyframes slide {
+    25%{
+        background: url(../img/Seccion_Masculino/port2.jpg);
+    }
+
+    50%{
+        background: url(../img/Seccion_Masculino/port3.jpg);
+    }
+
+    75%{
+        background: url(../img/Seccion_Masculino/port4.jpg);
+    }
+
+    100%{
+        background: url(../img/Seccion_Masculino/port5.jpg);
+    }
+
+   
+
+    
+}
