@@ -100,11 +100,11 @@ li>.naveg_sub{
 
 }
 
-/*...............slide automatico..............*/
+/*...............slider automatico..............*/
 
 .container_slider{
     position: relative;
-    top: 40px;
+    top: 0px;
     width: 650px;
     height:250px;
     margin: auto;
@@ -213,11 +213,11 @@ color: #ffffff;
 
 
 /*.....................Josue Romero.....................*/
+/*.......................Home..........................*/
 
 /*....................Slider automatico.......................*/
 .container_slider{
     position:relative;
-  top: 40px;
     width: 650px;
     height:250px;
     margin: auto;
@@ -252,22 +252,90 @@ animation-timing-function: ease-in;
         }
 
         @keyframes moverse{
-            0%,20%{
-                margin-left: 0;
-            }
+            0%{margin-left: 0;}
+            20%{margin-left: 0;}
 
-            25%,45%{
-                margin-left: -100%;
-            }
+            25%{margin-left: -100%;}
+            45%{margin-left: -100%;}
 
-            50%,70%{
-                margin-left: -200%;
-            }
+            50%{margin-left: -200%;}
+            70%{margin-left: -200%;}
 
-            75%,100%{
-                margin-left: -200%;
-            }
-            
+            75%{margin-left: -300%;}
+            100%{margin-left: -300%;}
+                        
         }
+
+/*................Texto cambiante.................*/
+.contenedor_letras {
+    position:relative;
+    display: flex;
+    width: 500px;
+    height:40px;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    display: flex;
+    /*
+    position: absolute;
+    
+   
+    
+    */
+    top: 0;
+    right: 0;
+    button: 0;
+    left: 0;
+    overflow: hidden;
+    margin: auto;
+    }
+    
+    .contenedor_letras .letra_mov {
+     list-style: none;
+     padding-left: 10px;
+     animation: cambiar 15s infinite;
+     
+    }
+    
+    ul, p {
+     margin: 0;
+    }
+ 
+ @keyframes  cambiar {
+
+    0%{ margin-top: 0;}
+   20%{ margin-top: 0;}
+   
+   25% { margin-top: -40PX;}
+   45% { margin-top: -40PX;}
+   
+   50% { margin-top: -80PX;}
+   70% { margin-top: -80PX;}
+   
+   75% { margin-top: -40PX;}
+   100% { margin-top: -40PX;}
+    
+    100% { margin-top: 0;}
+
+    /*
+  0%{ margin-top: 0;}
+   20%{ margin-top: 0;}
+   
+   25% { margin-top: -40PX;}
+   50% { margin-top: -40PX;}
+   
+   55% { margin-top: -80PX;}
+   80% { margin-top: -80PX;}
+   
+   85% { margin-top: -40PX;}
+   95% { margin-top: -40PX;}
+
+   100% { margin-top: 0;}
+
+   
+*/
+  
+ }
 
 
