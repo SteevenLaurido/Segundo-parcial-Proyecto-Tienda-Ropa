@@ -1,51 +1,47 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  
-}
-
-
-#header {
-    margin: auto;
-    width: 500px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-ul,
-ol {
-    list-style: none;
-}
-
-.nav li a {
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-
-
-}
-
-.nav li a:hover {
-    background-color: #434343;
-}
-
-
-.nav>li {
-    float: left;
-}
-
-
-.nav li ul {
-    display: none;
+.contenedor_letras {
+   
+    display: flex;
+    width: 400px;
+    height:40px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    line-height: 40px;
+    
     position: absolute;
-    min-width: 140px;
-
-}
-
-.nav li:hover>ul {
-    display: block;
-}
-
+    top: 0;
+    right: 0;
+    button: 0;
+    left: 0;
+    margin: auto;
+    
+    overflow: hidden;
+    }
+    
+    ul {
+     list-style: none;
+     padding-left: 10px;
+     animation: cambiar 10s infinite;
+     
+    }
+    
+    ul, p {
+     margin: 0;
+    }
+ 
+ @keyframes  cambiar {
+  
+  0%{ margin-top: 0;}
+   20%{ margin-top: 0;}
+   
+   25% { margin-top: -40PX;}
+   50% { margin-top: -40PX;}
+   
+   55% { margin-top: -80PX;}
+   80% { margin-top: -80PX;}
+   
+   85% { margin-top: -40PX;}
+   95% { margin-top: -40PX;}
+   
+  100% { margin-top: 0;}
+  
+ }
