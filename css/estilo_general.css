@@ -100,6 +100,51 @@ li>.naveg_sub{
 
 }
 
+/*...............slide automatico..............*/
+
+.container_slider{
+    position: relative;
+    top: 40px;
+    width: 650px;
+    height:250px;
+    margin: auto;
+    background: #0d0080;
+}
+
+.container_slider .slider{
+position: relative;
+width: 400%;
+height: 100%;
+display: flex;
+
+}
+
+.container_slider .slider li{
+    position: relative;
+    width: 100%;
+  
+    background: #5449b8;
+
+    
+    }
+
+    .container_slider .slider li img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    
+        
+        }
+
+
+
+
+
+
+/************************************************/
+
+
+
 /*-----------------------------------footer------------------------------------*/
 .footer {/*selector por clase*/
     float: right;
@@ -169,8 +214,60 @@ color: #ffffff;
 
 /*.....................Josue Romero.....................*/
 
+/*....................Slider automatico.......................*/
 .container_slider{
-position: relative;
-width: 100%;
-height: 100%;
+    position:relative;
+  top: 40px;
+    width: 650px;
+    height:250px;
+    margin: auto;
+    background:red;
+    overflow: hidden;
 }
+
+.container_slider .slider{
+position:absolute;
+width: 400%;
+height: 100%;
+display: flex;
+animation: moverse 15s infinite alternate ;
+animation-timing-function: ease-in;
+
+}
+
+.container_slider .slider li{
+    position:relative;
+    width: 100%;
+    list-style: none;
+
+    
+    }
+
+    .container_slider .slider li img{
+        position:absolute;
+        width: 650px;
+        height: 100%;
+    
+        
+        }
+
+        @keyframes moverse{
+            0%,20%{
+                margin-left: 0;
+            }
+
+            25%,45%{
+                margin-left: -100%;
+            }
+
+            50%,70%{
+                margin-left: -200%;
+            }
+
+            75%,100%{
+                margin-left: -200%;
+            }
+            
+        }
+
+
