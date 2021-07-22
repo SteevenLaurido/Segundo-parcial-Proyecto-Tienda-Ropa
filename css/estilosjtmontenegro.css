@@ -1,0 +1,37 @@
+#leyenda-git{
+    
+
+  left:5%;
+    padding: 15px;
+    width: 70%;
+    text-align:left;
+    background-color: rgb(202, 199, 199);
+
+}
+#info-tarjeta {
+    padding: 50px;
+ display: flex;
+
+width:100%;
+}
+#info-tarjeta span{
+    padding: 30px;
+    margin-right: 2%;
+}
+#info-tarjeta h3{
+    color: rgb(141, 135, 135);
+    padding: 5px;
+    margin-bottom: 6px;
+}
+#info-tarjeta p{
+    padding-bottom: 35px;
+}
+#cuadro-info-tar{
+    display: block;
+}
+#precios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    text-decoration: blue;
+}
