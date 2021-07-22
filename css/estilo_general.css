@@ -339,6 +339,11 @@ animation-timing-function: ease-in;
   
  }
 
+ .cont_img_enc1 img{
+    display:block;
+    margin:auto;
+
+ }
 
  
 
