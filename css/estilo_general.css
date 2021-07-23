@@ -64,7 +64,7 @@ li>.naveg_sub{
 
 .nav li ul {
     display: none;
-    position: absolute;
+    /*position: absolute; */
 }
 
 .nav li:hover>ul {
