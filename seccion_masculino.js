@@ -96,7 +96,7 @@ function updateShoppingCartTotal() {
     shoppingCartItems.forEach(shoppingCartItem => { //Captura solo el elemento
         const shoppingCartItemPriceElement = shoppingCartItem.querySelector('.shoppingCartItemPrice');
         //console.log("🚀 ~ file: tienda.js ~ line 68 ~ updateShoppingCartTotal ~ shoppingCartItemPriceElement", shoppingCartItemPriceElement)
-        const shoppingCartItemPrice = Number(shoppingCartItemPriceElement.textContent.replace('€', ' ')); //Captura el precio
+        const shoppingCartItemPrice = Number(shoppingCartItemPriceElement.textContent.replace('$', ' ')); //Captura el precio
         //console.log("🚀 ~ file: tienda.js ~ line 70 ~ updateShoppingCartTotal ~ shoppingCartItemPrice", shoppingCartItemPrice)
         const shoppingCartItemQuantityElement = shoppingCartItem.querySelector('.shoppingCartItemQuantity');
         const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value);
