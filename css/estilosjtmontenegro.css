@@ -1,7 +1,7 @@
 #leyenda-git{
     
 
-  left:5%;
+  margin-left:15%;
     padding: 15px;
     width: 70%;
     text-align:left;
@@ -12,11 +12,12 @@
     padding: 50px;
  display: flex;
 
-width:100%;
+width:85%;
 }
 #info-tarjeta span{
     padding: 30px;
     margin-right: 2%;
+    margin-left: 15%;
 }
 #info-tarjeta h3{
     color: rgb(141, 135, 135);
@@ -53,5 +54,20 @@ left: 100px;
     display: inline-block;
 width: 950px;
 margin-left: 15%;
+margin-top: 35px;
+margin-bottom: 35px;
+color:  rgb(104, 102, 102);
+
+}
+
+#terminos-con h2{
+    color: rgb(104, 102, 102);
+
+
+}
+
+.termi-con-ca{
+    padding: 15px;
+    background-color:rgb(253, 230, 230);
 
 }
