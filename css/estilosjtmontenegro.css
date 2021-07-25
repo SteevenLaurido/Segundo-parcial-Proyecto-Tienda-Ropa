@@ -1,0 +1,73 @@
+#leyenda-git{
+    
+
+  margin-left:15%;
+    padding: 15px;
+    width: 70%;
+    text-align:left;
+    background-color: rgb(202, 199, 199);
+
+}
+#info-tarjeta {
+    padding: 50px;
+ display: flex;
+
+width:85%;
+}
+#info-tarjeta span{
+    padding: 30px;
+    margin-right: 2%;
+    margin-left: 15%;
+}
+#info-tarjeta h3{
+    color: rgb(141, 135, 135);
+    padding: 5px;
+    margin-bottom: 6px;
+}
+#info-tarjeta p{
+    padding-bottom: 35px;
+}
+#cuadro-info-tar{
+    display: block;
+}
+#precios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+width:950px;
+left: 100px;
+ text-align: center blue 25pt;
+ background-color : rgb(233, 220, 220);
+ margin-left: 15%;
+ 
+}
+#precios label{
+    padding: 20px;  
+    text-align: center;
+    border: 1px solid rgb(141, 135, 135);
+}
+#precios span{
+    display: flex;
+    justify-content: center;
+}
+#terminos-con{
+    display: inline-block;
+width: 950px;
+margin-left: 15%;
+margin-top: 35px;
+margin-bottom: 35px;
+color:  rgb(104, 102, 102);
+
+}
+
+#terminos-con h2{
+    color: rgb(104, 102, 102);
+
+
+}
+
+.termi-con-ca{
+    padding: 15px;
+    background-color:rgb(253, 230, 230);
+
+}
