@@ -100,6 +100,16 @@ li>.naveg_sub{
     flex-wrap: wrap;
 
 }
+#logo_targ{/*selector por id*/
+  
+    display: inline-flex;
+    width: 50%;
+    height: 10%;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
 
 /*...............slider automatico..............*/
 
@@ -361,6 +371,25 @@ height: 100%;
     display: inline-block;
     width: 24%;
     border: 5px solid rgb(255, 255, 255);
+    
+
+}
+
+#pack_fotos{
+
+    text-align:center
+    
+}
+
+.imagenes_fotos {
+    
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+    border: 5px solid rgb(255, 255, 255);
+    hover
     
 
 }
