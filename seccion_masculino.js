@@ -126,7 +126,7 @@ function quantityChanged(event) {
     updateShoppingCartTotal();
 }
 
-function comprarButtonClicked() {//Estafuncion deja en blanco los valores despues de comprar
+function comprarButtonClicked() {//Esta funcion deja en blanco los valores despues de comprar
 
     shoppingCartItemsContainer.innerHTML = '';
     updateShoppingCartTotal();
