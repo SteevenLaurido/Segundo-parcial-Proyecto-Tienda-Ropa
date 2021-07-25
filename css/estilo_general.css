@@ -1,0 +1,366 @@
+/* Menu*/
+*{/* selector universal*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+  }
+ 
+.menu{
+    background: #2b619f;
+  font-family: Arial, Helvetica, sans-serif;
+  
+ 
+
+}
+.menu ul {/*selector por clase-*/
+list-style: none;
+padding: 0;
+width :100%;
+max-width:10000px;
+margin: 5px; /*Espacio entre imagen y texto*/
+
+}
+
+.menu  ul li  {/*selector descendiente-*/
+display: inline-flex;
+
+}
+
+a{/*selector de elemento- */
+    text-decoration:none;
+}
+
+.menu ul li a{
+    color:#f7f5f5;
+    padding: 15px;
+}
+
+.nav_li:hover{
+    background:#1503bb;
+    
+}
+
+/*-----------------------------------Menu desplegable------------------------------------*/
+
+
+.naveg_sub li  {
+    background-color: #12058a;
+    display: block;
+    
+    padding: 0;
+    margin: 0;
+
+}
+
+li>.naveg_sub{
+    display: flex;
+    position: relative;    
+}
+
+.nav li a:hover {
+    background-color: #1503bb;
+}
+
+.nav li ul {
+    display: none;
+    /*position: absolute; */
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+
+
+/*.....................FOOTER....................*/
+.footer {/*selector por clase*/
+    float: right;
+    width: 100%;
+    height:80px; /*different*/
+    margin: 0px;
+    background-color:#141414;
+    color:#FFF;
+    padding-bottom: 25px ;
+    text-align:center;
+}
+.footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px;
+    background-color:#141414;
+    padding-bottom: 3px;
+}
+
+#logo{/*selector por id*/
+  
+    display: inline-flex;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+/*...............slider automatico..............*/
+
+.container_slider{
+    position: relative;
+    top: 0px;
+    width: 650px;
+    height:250px;
+    margin: auto;
+    background: #0d0080;
+}
+
+.container_slider .slider{
+position: relative;
+width: 400%;
+height: 100%;
+display: flex;
+
+}
+
+.container_slider .slider li{
+    position: relative;
+    width: 100%;
+  
+    background: #5449b8;
+
+    
+    }
+
+    .container_slider .slider li img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    
+        
+        }
+
+
+
+
+
+
+/************************************************/
+
+
+
+/*-----------------------------------footer------------------------------------*/
+.footer {/*selector por clase*/
+    float: right;
+    width: 100%;
+    height:80px; /*different*/
+    margin: 0px;
+    background-color:#141414;
+    color:#FFF;
+    padding-bottom: 25px ;
+    text-align:center;
+}
+.footer p{
+    padding: 6px;
+    background-color:#0a005f;
+    padding-bottom: 3px;
+}
+.futer-push{/*selector por clase-*/
+    display: inline-block;
+    float: right;
+    width: 100%;
+    height:80px; /*different*/
+    margin: 0px;
+background: #2b619f;
+
+}
+.redes-sociales{/*selector por clase*/
+    display: inline-flex;
+
+}
+#sigueme {/*selector descendiente */
+    float: left;
+    color: #ffffff;
+    margin: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 200%;
+    margin-right: 25px;
+    padding-right: 35px;
+}
+.twitter{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    padding-right:25px ;
+    padding-top: 20px;
+    padding-bottom:12px;
+  
+    border-right: 1.5px solid;
+ 
+}
+.twitter a{
+    margin: 8px 15px 10px 12px;
+color: #ffffff;
+
+}
+.twitter:hover{
+    background-color:#5449b8;
+  
+}
+.im-tuit{
+    width: 42px;
+    border-radius:20px ;
+    height: 42px;
+    margin-left: 12px;
+
+}
+/*-----------------------------------Fin del footer------------------------------------*/
+
+
+/*.....................Josue Romero.....................*/
+
+/*.......................Home..........................*/
+
+/*....................Slider automatico.......................*/
+.container_slider{
+    position:relative;
+    width: 650px;
+    height:250px;
+    margin: auto;
+    background:red;
+    overflow: hidden;
+}
+
+.container_slider .slider{
+position:absolute;
+width: 400%;
+height: 100%;
+display: flex;
+animation: moverse 15s infinite alternate ;
+animation-timing-function: ease-in;
+
+}
+
+.container_slider .slider li{
+    position:relative;
+    width: 100%;
+    list-style: none;
+
+    
+    }
+
+    .container_slider .slider li img{
+        position:absolute;
+        width: 650px;
+        height: 100%;
+    
+        
+        }
+
+        @keyframes moverse{
+            0%{margin-left: 0;}
+            20%{margin-left: 0;}
+
+            25%{margin-left: -100%;}
+            45%{margin-left: -100%;}
+
+            50%{margin-left: -200%;}
+            70%{margin-left: -200%;}
+
+            75%{margin-left: -300%;}
+            100%{margin-left: -300%;}
+                        
+        }
+
+/*................Texto cambiante.................*/
+.contenedor_letras {
+    position:relative;
+    display: flex;
+    width: 500px;
+    height:40px;
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    display: flex;
+    /*
+    position: absolute;
+    */
+    top: 0;
+    right: 0;
+    button: 0;
+    left: 0;
+    overflow: hidden;
+    margin: auto;
+    }
+    
+    .contenedor_letras .letra_mov {
+     list-style: none;
+     padding-left: 10px;
+     animation: cambiar 15s infinite;
+     
+    }
+    
+    ul, p {
+     margin: 0;
+    }
+ 
+ @keyframes  cambiar {
+
+    0%{ margin-top: 0;}
+   20%{ margin-top: 0;}
+   
+   25% { margin-top: -40PX;}
+   45% { margin-top: -40PX;}
+   
+   50% { margin-top: -80PX;}
+   70% { margin-top: -80PX;}
+   
+   75% { margin-top: -40PX;}
+   100% { margin-top: -40PX;}
+    
+    100% { margin-top: 0;}
+
+    /*
+  0%{ margin-top: 0;}
+   20%{ margin-top: 0;}
+   
+   25% { margin-top: -40PX;}
+   50% { margin-top: -40PX;}
+   
+   55% { margin-top: -80PX;}
+   80% { margin-top: -80PX;}
+   
+   85% { margin-top: -40PX;}
+   95% { margin-top: -40PX;}
+
+   100% { margin-top: 0;}
+
+   
+*/
+  
+ }
+
+ .cont_img_enc1 img{
+    display:block;
+    margin:auto;
+    width: 100%;
+height: 100%;
+
+ }
+
+ 
+#pack3_img{
+
+    text-align:center
+    
+}
+
+ .imagenes_texto {
+    
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    border: 5px solid rgb(255, 255, 255);
+    
+
+}
