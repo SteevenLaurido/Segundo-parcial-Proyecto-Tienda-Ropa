@@ -1,0 +1,137 @@
+
+body{
+   
+ font-size: 12px;
+   
+ font-family: verdana;  
+margin: auto;
+  width:98%;
+ 
+background: #FFFFFF;
+}
+
+
+#contenedorPrincipal1{
+ 
+          background: white;
+ 
+        /*para centrar un contenedor*/
+  
+          border-radius: 10px;
+          display: inline-block;
+          width: 49%;
+          height: 80%;
+          padding-top:10px;
+          padding-bottom:20px;
+          padding-left:20px;
+          padding-right:20px;
+          justify-content: center;
+          margin-top: 50px;
+          background: #FFFFFF;
+ 		
+  
+}
+
+#contenedorPrincipal2{
+ 
+          background: white;
+ 
+        /*para centrar un contenedor*/
+  
+          border-radius: 10px;
+          display: inline-block;
+          width: 49%;
+          height: 100%;
+          padding-top:10px;
+          padding-bottom:60px;
+          padding-left:20px;
+          padding-right:20px;
+          justify-content: center;
+          margin-top: 50px;
+          margin-bottom: 0px;
+          background: #FFFFFF;
+ 		
+  
+}
+
+
+/*#contenedorPrincipal{
+    background: #ccccff;
+    width: 80%;
+    margin: 0 auto; /*para centrar un contenedor*/
+    
+}
+
+*/
+#encabezado{
+    text-align: center;
+    background: #99ccff;
+}
+
+/*header img{
+    width: 70px;
+    height: 70px;
+}
+*/
+header h1{
+    font-size: 40px;
+    color:#3333ff;
+    display: inline;  
+}
+
+nav{ margin: 20px 0 0 0;
+  }
+
+nav a{
+   padding: 10px;
+    border: 2px solid #3e4564;
+    border-radius: 2px;
+    background: #9999ff;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: #3366ff;
+    color: white;
+}
+
+
+#contenedorContenido{
+    color:#333333;
+}
+
+
+
+#pie{
+    background: #9999ff;
+    text-align: center;
+}
+
+
+footer img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.formularios{
+    border: 1px solid #020E36;
+    border-radius: 25px;
+    padding: 10px;
+    background: #F7FEFE;
+    width:90%;
+   margin: 0 auto; /*para centrar*/
+}
+
+.formularios2{
+    border: 1px solid #020E36;
+    border-radius: 25px;
+    padding: 5px;
+    background: #F7FEFE;
+    width: 70%;
+  height: 230px;
+   margin: 0 auto; /*para centrar*/  margin-bottom:60px;}
+
+.row{
+    padding: 5px;
+}
