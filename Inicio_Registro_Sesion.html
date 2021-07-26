@@ -1,81 +1,183 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="es">
     <head>
-        <title>Iniciar Sesion</title>
         <meta charset="UTF-8">
-        <meta name="Inicio" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilo_general.css">
+        <title>Registro/inicio de sesion</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/misestilos.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+        <!--PARA ENLAZAR EL DOCUMENTO JS EXTERNO-->
+        <script  src="js/validacionesLaurido.js"> </script>
+		
     </head>
-    <body>
-        <header>
-            <div>
-                <img id="logo" src="img/Encabezado.jpg" alt="Logo">
-            </div>
-        </header>
-    
-    
-        <nav class="menu">
-            <ul>
-    
-                <li class="nav_li"> <a href="Home.html">HOME</a> </li>
-                <li class="nav_li"> <a href="Seccion_Masculino.html">Seccion Hombres</a></li>
-                <li class="nav_li"> <a href="Seccion_Femenino.html">Seccion Mujeres</a> </li>
-                <li class="nav_li"> <a href="Oferta_Promociones.html">Ofertas y Promociones</a> </li>
-                <li class="nav_li"> <a href="Quienes_somos.html">Quienes Somos</a></li>
-                <li class="nav_li"> <a href="Tarjeta_Regalos.html">Tarjetas de Regalos</a> </li>
-                <li class="nav_li"> <a href="Inicio_Registro_Sesion.html">Inicio de Sesion</a> </li>
-                <li class="nav_li"> <a href="Contacto_empresa.html">Contacto</a> </li>
-    
-    
-            </ul>
-        </nav>
-    
-    
-        <div class=futer-push>
-            <h2 id=sigueme> Siguenos</h2>
-            <ul class=redes-sociales>
-                <li class=twitter>
-                    <div class="icon-social"><img class=im-tuit src="img/Twitter.png" alt=""></div>
-                    <a href="#" target="_blank">Twitter</a>
-                </li>
-                <li class=twitter>
-                    <div class="icon-social"><img class=im-tuit src="img/facebook.png" alt=""></div>
-                    <a href="#" target="_blank">facebook</a>
-                </li>
-                <li class=twitter>
-                    <div class="icon-social"><img class=im-tuit src="img/Instagram.png" alt=""></div>
-                    <a href="#" target="_blank">Instagram</a>
-                </li>
-                <li class=twitter>
-                    <div class="icon-social"><img class=im-tuit src="img/correo.png" alt=""></div>
-                    <a href="#" target="_blank">Email</a>
-                </li>
-    
-            </ul>
-    
+    <body style="text-align:center;margin:auto;">
+	 <div class="contenedortotal">
+	   <div id="contenedorPrincipal2" style="vertical-align:top;width:48%;margin:auto;display:inline-block;" onreset="return limpiarMensajes()">
+             <!--<div>Aqui encabezado</div>-->
+            <div class="contenedorContenido">
+                <h4 class="text-center"  style="font-family: arial black; " >Inicio de Sesion</h4>
+                <hr class="barraform">
+                
+                <div class="formularios2">
+                    <!-- onsubmit=return validar() PERMITE LLAMAR A LA FUNCION DE JAVASCRIPT QUE VALIDA EL FORMULARIO-->
+                    <form class="formContacto" onsubmit="return validar2()">
+                        <div class="row">  
+                            <div class="col-md-6">
+                                <label style="font-family: cursive; font-size: 16px;" >Correo Electronico</label>
+                                <i class="fas fa-envelope-square"></i>
+                                <input type="email" name="correoInicio" placeholder="name@example.com" id="correoInicio" class="formItem" size="40"/><br />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label style="font-family: cursive; font-size: 16px;" >Contraseña Usuario</label>
+								<i class="fas fa-key"></i>
+                                <input type="password" name="passInicio" placeholder="Password" id="passInicio" class="formItem" size="40"/><br />
+                                <input type="checkbox" onclick="myfuction()" ><span> ver contraseña</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <input type="submit" class="btn btn-outline-success" value="Ingresar" >
+                                <input type="reset" class="btn btn-outline-danger" value="Cancelar">
+                             </div>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+             
         </div>
-    
-    
-    
-        <div class="footer">
-            <p>
-                Teléfonos: 0123456789 // 0987654321
-            </p>
-            <p>E-mail: info@ecuafashion.com.ec</p>
-            <p> Guayaquil - Ecuador</p>
-            <p>ecuafashion © 2021 | by Desarrollo ISIS-MA6-1 S.A Todos los derechos reservados.</p>
-            <p>
-    
-            </p>
-            <div>
-                <img id="logo" src="img/tarjetas_credito.png" alt="Logo">
-            </div>
+		
+	    <div id="contenedorPrincipal1" style="height:100%;width:48%;margin:auto;display:inline-block;" onreset="return limpiarMensajes()">
+             <!--<div>Aqui encabezado</div>-->
+            
+            
+            <div class="contenedorContenido">
+                <h4 class="text-center" style="font-family: arial black;" >Registro De Sesion</h4>
+                <hr class="barraform">
+                
+                <div class="formularios">
+                    <!-- onsubmit=return validar() PERMITE LLAMAR A LA FUNCION DE JAVASCRIPT QUE VALIDA EL FORMULARIO-->
+                    <form class="formContacto1" onsubmit="return validar()">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <i class="fas fa-user-edit"></i>
+                                <input  type="text" name="nombres" placeholder="Nombres" id="nombres" class="formItem"/><br />
+								<small class="form-text text-muted">Ej. Steeven Ariel  </small> 
+                            </div>
+                            <div class="col-md-6">
+                               <i class="fas fa-user-edit"></i>
+                                <input type="text" name="apellidos" placeholder="Apellidos" id="apellidos" class="formItem"/><br />
+								<small class="form-text text-muted">Ej. Laurido Troya  </small> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">  
+							     <i class="fas fa-envelope-square"></i>
+                                <input type="email" name="correo" placeholder="E-mail" id="correo" class="formItem"/><br />
+								<small class="form-text text-muted">Ej. name@example.com  </small>
+                            </div>
+                            <div class="col-md-6">
+                                 <i class="fas fa-mobile-alt"></i>
+                                <input type="text" name="telefono" placeholder="Telefono" id="telefono" class="formItem"/><br />
+								<small class="form-text text-muted">Ej. 0986986325 </small>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label style="font-family: cursive; font-size: 16px;" >Genero:</label>
+								<br>
+                                <input class="gen" id="fem" type="radio" name="genero" value="F"/>Femenino
+                                <input class="gen" id="mas" type="radio" name="genero" value="M"/>Masculino
+								<br>
+                                 <!--<input class="gen" id="otro" type="radio" name="genero" value="O"/>Otro-->
+								 
+                           </div>
+                            <div class="col-md-6">
+                                  <label  style="font-family: cursive; font-size: 16px;">Tipo de Documentacion :</label>
+                                <select name="estadoC" id="estadoC" class="formItem">
+                                    <option value="0">Seleccione..</option>
+                                    <option value="1">Cedula</option>
+                                    <option value="2">Pasaporte</option>                          
+                                </select>
+                                <input type="text" name="documento" placeholder="*minimo 10 digitos" id="documento" class="formItem"/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label  style="font-family: cursive; font-size: 16px;" >Formas de Pago:</label>
+                               1 <input type="checkbox" name="fpago"  class="formItem sus" id="check" value="1" onchange="javascript:showContent()"/>
+                               2 <input type="checkbox" name="fpago" class="formItem sus" id="check2" value="1" onchange="javascript:showContent()" />
+								<br /><br />
+								<div id="content" style="display: none;">
+								<i class="far fa-credit-card"></i>
+								<label>Tarjeta de Debito</label><br />
+									<select name="tarjeta" id="tarjeta" class="formItem">
+										<option value="0">Seleccione..</option>
+										<option value="1">PacifiCard</option>
+										<option value="2">Visa</option>
+										<option value="3">Mastercard</option>
+									</select>
+									<input type="text" name="numtarje" placeholder="Numero de Tarjeta *16" id="numtarje" class="formItem"/>
+									<input type="password" name="passwdtarj" placeholder="Contraseña" id="passwdtarj" class="formItem"/><br />
+									<input type="checkbox" onclick="myfuction()"><span> ver contraseña</span>
+								</div>	
+ 								<br />
+								<div id="content2" style="display: none;">
+								 <i class="fab fa-paypal"></i>
+								 <label>Paypal</label><br />
+									     <input type="email" name="correo2" placeholder="Email" id="correo2" class="formItem"/>		 
+									     <input type="password" name="passwd" placeholder="Contraseña" id="passwd" class="formItem"/><br />
+									     <input type="checkbox" onclick="myfuction()" ><span> ver contraseña</span>
+								</div>
+								<br />
+                            </div>
+                            <div class="col-md-6">
+                               <label  style="font-family: cursive; font-size: 16px;">Fecha de Nacimiento:</label>
+                                <input type="date" name="fecha" id="fecha" class="formItem"/>
+                            </div>						
+                        </div>
+						<div class="row">
+                            <div class="col-md-12">
+                                <label style="font-family: cursive; font-size: 16px;">Direccion:</label> <br>
+                                <textarea class="form-control" id="direccion"  name="direccion" rows="2" ></textarea>
+								<small class="form-text text-muted">Ej. Ecuador, Guayas, Guayaquil, parrq. tarqui, prosperina, mz12D, v13 </small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+							  <label style="font-family: cursive; font-size: 16px;" >Contraseña de Usuario: </label>
+                              <input type="password" name="passwdU" placeholder="*minimo 8 digitos" id="passwdU" class="formItem"/><br />
+							  <small class="form-text text-muted">Ej. w1e2r3t6t8 </small>
+                            </div>
+							<div class="col-md-6">
+							  <label style="font-family: cursive; font-size: 16px;" >Comprobacion de Contraseña: </label>
+                              <input type="password" name="passwdU2" placeholder="*minimo 8 digitos" id="passwdU2" class="formItem"/>
+							 
+                            </div>
+                        </div>
+						<div class="row">
+							<div class="col-md-12">
+							 <input type="checkbox" name="terminos"  class="formItem sus" id="terminos" value="1"/>	
+						   	<span>Al Registrarte, Aceptas Nuestras </span><a class="link" href="Condicionesyprivacidad.html"> Condiciones de uso y Política de privacidad.</a>
+							
+							</div>							 
+     					</div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+							   
+                                <input type="submit" class="btn btn-outline-success" value="Registrar">
+                                <input type="reset" class="btn btn-outline-danger" value="Cancelar">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>            
+             <!--<div>Aqui pie de p&aacute;gina</div>-->
         </div>
-    
+       </div>
     </body>
 </html>
